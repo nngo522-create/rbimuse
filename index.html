@@ -1,0 +1,3242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rbi Muse🎀</title>
+<meta name="description" content="Rbi Muse🎀 — Shop order các sản phẩm từ New Zealand.">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+  --cream:#fbf7f2;
+  --cream2:#f3ebe3;
+  --pink:#e9c7c8;
+  --pink2:#f7e4e3;
+  --rose:#9b6668;
+  --brown:#3a2927;
+  --muted:#806d68;
+  --white:#fff;
+  --line:#e8d9d2;
+  --shadow:0 18px 50px rgba(74,46,39,.10);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--brown);
+  font-family:"DM Sans",sans-serif
+}
+a{text-decoration:none;color:inherit}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.container{width:min(1180px,92%);margin:auto}
+
+/* NAV */
+.nav{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(251,247,242,.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line)
+}
+.nav-inner{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px
+}
+.logo{
+  font-family:"Cormorant Garamond",serif;
+  font-size:31px;
+  font-weight:700;
+  letter-spacing:.3px;
+  white-space:nowrap
+}
+.logo span{color:var(--rose)}
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  font-size:14px
+}
+.nav-links a{transition:.25s}
+.nav-links a:hover{color:var(--rose)}
+.nav-search{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:999px;
+  padding:9px 14px;
+  display:flex;
+  align-items:center;
+  gap:7px
+}
+.nav-search input{
+  width:115px;
+  border:0;
+  outline:0;
+  background:transparent;
+  font-size:13px
+}
+.menu-btn{
+  display:none;
+  border:0;
+  background:transparent;
+  font-size:25px
+}
+
+/* HERO */
+.hero{
+  min-height:650px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:60px
+}
+.kicker{
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--rose);
+  font-size:12px;
+  font-weight:700
+}
+.hero h1{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(60px,8vw,105px);
+  line-height:.84;
+  margin:22px 0 28px;
+  font-weight:600;
+  white-space:nowrap
+}
+.hero h1 span{color:var(--rose)}
+.hero p{
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.8;
+  max-width:540px
+}
+.hero-buttons{
+  display:flex;
+  gap:12px;
+  margin-top:30px;
+  flex-wrap:wrap
+}
+.btn{
+  border:0;
+  border-radius:999px;
+  padding:13px 22px;
+  background:var(--brown);
+  color:#fff;
+  transition:.3s
+}
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:var(--shadow)
+}
+.btn.light{
+  background:transparent;
+  color:var(--brown);
+  border:1px solid var(--line)
+}
+.hero-art{
+  height:500px;
+  border-radius:34px;
+  background:linear-gradient(145deg,#ead4d0,#f8ede7 52%,#dfc4bf);
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow)
+}
+.hero-art:before,
+.hero-art:after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(255,255,255,.65);
+  border-radius:50%
+}
+.hero-art:before{
+  width:450px;
+  height:450px;
+  left:-90px;
+  top:35px
+}
+.hero-art:after{
+  width:320px;
+  height:320px;
+  right:-70px;
+  bottom:-70px
+}
+.ribbon{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(-8deg);
+  font-family:"Cormorant Garamond",serif;
+  font-size:90px;
+  color:rgba(255,255,255,.9);
+  white-space:nowrap
+}
+.float-card{
+  position:absolute;
+  background:rgba(255,255,255,.78);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,.8);
+  padding:18px 20px;
+  border-radius:18px;
+  box-shadow:var(--shadow)
+}
+.float-card.one{left:25px;top:28px}
+.float-card.two{right:25px;bottom:28px}
+.float-card b{
+  font-family:"Cormorant Garamond",serif;
+  font-size:25px
+}
+
+/* SECTIONS */
+section{padding:95px 0}
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:20px;
+  margin-bottom:32px
+}
+.eyebrow{
+  color:var(--rose);
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:11px;
+  font-weight:700
+}
+h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:50px;
+  line-height:1;
+  margin:8px 0 0;
+  font-weight:600
+}
+.section-note{
+  color:var(--muted);
+  max-width:480px;
+  line-height:1.6
+}
+
+/* BRANDS */
+.brand-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:14px
+}
+.brand-card{
+  min-height:145px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:.35s;
+  position:relative;
+  overflow:hidden
+}
+.brand-card:after{
+  content:"";
+  position:absolute;
+  width:100px;
+  height:100px;
+  background:var(--pink2);
+  border-radius:50%;
+  right:-35px;
+  bottom:-40px;
+  transition:.4s
+}
+.brand-card:hover{
+  transform:translateY(-7px);
+  box-shadow:var(--shadow)
+}
+.brand-card:hover:after{transform:scale(1.5)}
+.brand-name{
+  font-family:"Cormorant Garamond",serif;
+  font-size:29px;
+  position:relative;
+  z-index:1
+}
+.brand-arrow{
+  font-size:12px;
+  color:var(--rose);
+  position:relative;
+  z-index:1
+}
+
+/* PRODUCTS */
+.shop-tools{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:24px
+}
+.searchbox{
+  flex:1;
+  min-width:240px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:13px 18px;
+  outline:0
+}
+.filter{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:12px 15px;
+  outline:0
+}
+
+.jewellery-categories{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin:0 0 25px
+}
+.jewellery-category{
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--brown);
+  border-radius:999px;
+  padding:9px 16px;
+  font-size:13px;
+  transition:.25s
+}
+.jewellery-category:hover,
+.jewellery-category.active{
+  background:var(--brown);
+  color:#fff;
+  border-color:var(--brown)
+}
+
+.chips{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:10px 0 25px
+}
+.chip{
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--brown);
+  border-radius:999px;
+  padding:9px 15px;
+  font-size:13px
+}
+.chip.active{
+  background:var(--brown);
+  color:#fff;
+  border-color:var(--brown)
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px
+}
+.product{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  transition:.35s;
+  animation:rise .55s ease both
+}
+.product-hitarea{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  padding:0;
+  border:0;
+  border-radius:inherit;
+  background:transparent
+}
+.product-hitarea:focus-visible{
+  outline:2px solid var(--rose);
+  outline-offset:-4px
+}
+.product:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow)
+}
+.product-img{
+  aspect-ratio:1/1;
+  background:linear-gradient(145deg,#f5e8e2,#eee4e0);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  position:relative
+}
+.product-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+.placeholder{
+  font-family:"Cormorant Garamond",serif;
+  font-size:52px;
+  color:#b88f89
+}
+.product-body{padding:16px}
+.product-brand{
+  font-size:10px;
+  letter-spacing:1.5px;
+  color:var(--rose);
+  font-weight:700;
+  text-transform:uppercase
+}
+.product-name{
+  font-family:"Cormorant Garamond",serif;
+  font-size:22px;
+  line-height:1.05;
+  margin:7px 0 9px
+}
+.product-price{
+  font-weight:700;
+  font-size:17px
+}
+.product-cat{
+  font-size:11px;
+  color:var(--muted);
+  margin-top:5px
+}
+.product-btn{
+  position:relative;
+  z-index:2;
+  width:100%;
+  margin-top:13px;
+  border:1px solid var(--line);
+  background:var(--cream);
+  border-radius:10px;
+  padding:10px;
+  color:var(--brown);
+  transition:.25s
+}
+.product-btn:hover{
+  background:var(--brown);
+  color:#fff
+}
+
+/* HOW */
+.steps{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px
+}
+.step{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:22px;
+  min-height:190px
+}
+.step-no{
+  font-family:"Cormorant Garamond",serif;
+  font-size:40px;
+  color:var(--rose)
+}
+.step h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:25px;
+  margin:10px 0
+}
+.step p{
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.6;
+  margin:0
+}
+.request{
+  margin-top:18px;
+  padding:30px;
+  border-radius:25px;
+  background:var(--brown);
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px
+}
+.request p{
+  color:#ddcfca;
+  margin:6px 0 0
+}
+
+/* POLICY */
+.policy{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px
+}
+.policy-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:30px
+}
+.policy-card h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:31px;
+  margin:0 0 20px
+}
+.policy-list{
+  display:grid;
+  gap:15px
+}
+.policy-item{
+  display:flex;
+  gap:14px;
+  border-bottom:1px solid #eee1db;
+  padding-bottom:14px
+}
+.policy-item:last-child{border-bottom:0}
+.icon{
+  width:34px;
+  height:34px;
+  flex:none;
+  border-radius:50%;
+  background:var(--pink2);
+  display:grid;
+  place-items:center
+}
+.policy-item b{font-size:14px}
+.policy-item p{
+  font-size:13px;
+  color:var(--muted);
+  margin:4px 0;
+  line-height:1.5
+}
+
+/* CONTACT */
+.contact{
+  background:var(--pink2);
+  border-radius:35px;
+  padding:55px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px
+}
+.contact h2{font-size:57px}
+.ig{
+  font-size:25px;
+  font-family:"Cormorant Garamond",serif
+}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(35,22,19,.45);
+  backdrop-filter:blur(7px);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:50
+}
+.modal.open{display:flex}
+.modal-box{
+  width:min(1050px,100%);
+  max-height:92vh;
+  overflow:auto;
+  background:var(--cream);
+  border-radius:28px;
+  padding:30px;
+  position:relative
+}
+.close{
+  position:absolute;
+  right:18px;
+  top:18px;
+  border:0;
+  background:#fff;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  z-index:5
+}
+.modal-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:30px
+}
+.modal-gallery{min-width:0}
+.modal-main-image{
+  background:var(--pink2);
+  border-radius:20px;
+  min-height:430px;
+  position:relative;
+  display:grid;
+  place-items:center;
+  overflow:hidden
+}
+.modal-main-image img{
+  width:100%;
+  height:100%;
+  max-height:560px;
+  object-fit:cover;
+  border-radius:20px
+}
+.gallery-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:38px;
+  height:38px;
+  border:0;
+  border-radius:50%;
+  background:rgba(255,255,255,.88);
+  color:var(--brown);
+  font-size:20px;
+  box-shadow:0 6px 20px rgba(74,46,39,.12)
+}
+.gallery-arrow.prev{left:12px}
+.gallery-arrow.next{right:12px}
+.gallery-thumbs{
+  display:flex;
+  gap:9px;
+  margin-top:10px;
+  overflow-x:auto;
+  padding-bottom:3px
+}
+.gallery-thumb{
+  width:72px;
+  height:72px;
+  flex:0 0 72px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  padding:0;
+  overflow:hidden
+}
+.gallery-thumb.active{
+  border:2px solid var(--rose)
+}
+.gallery-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+.modal-brand{
+  font-size:10px;
+  letter-spacing:1.5px;
+  color:var(--rose);
+  font-weight:700;
+  text-transform:uppercase
+}
+.modal-name{
+  font-family:"Cormorant Garamond",serif;
+  font-size:42px;
+  line-height:1;
+  margin:10px 0
+}
+.modal-price{
+  font-size:22px;
+  font-weight:700;
+  margin:15px 0
+}
+.modal-meta{
+  display:grid;
+  gap:8px;
+  margin:18px 0;
+  padding:16px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px
+}
+.modal-meta-row{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  font-size:13px;
+  border-bottom:1px solid #eee1db;
+  padding-bottom:8px
+}
+.modal-meta-row:last-child{
+  border-bottom:0;
+  padding-bottom:0
+}
+.modal-meta-row span{color:var(--muted)}
+.modal-description{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:14px;
+  margin:18px 0
+}
+.size-box{
+  margin-top:24px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px
+}
+.size-picker{
+  display:grid;
+  gap:12px;
+  margin:14px 0 10px
+}
+.size-picker label{
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:700
+}
+.size-picker select{
+  width:100%;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:12px;
+  padding:12px 14px;
+  color:var(--brown);
+  outline:0
+}
+.size-title{
+  font-family:"Cormorant Garamond",serif;
+  font-size:28px;
+  margin:0 0 12px
+}
+.size-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:12px
+}
+.size-table th,
+.size-table td{
+  text-align:left;
+  padding:9px 8px;
+  border-bottom:1px solid #eee1db
+}
+.size-table th{
+  font-weight:700;
+  background:var(--pink2)
+}
+.size-table tr:last-child td{border-bottom:0}
+.size-note{
+  font-size:11px;
+  color:var(--muted);
+  margin:10px 0 0;
+  line-height:1.5
+}
+
+/* FOOTER */
+footer{
+  padding:35px 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:12px
+}
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:20px
+}
+
+/* ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:.8s ease
+}
+.reveal.visible{
+  opacity:1;
+  transform:none
+}
+@keyframes rise{
+  from{
+    opacity:0;
+    transform:translateY(14px)
+  }
+  to{
+    opacity:1;
+    transform:none
+  }
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+  .brand-grid{grid-template-columns:repeat(3,1fr)}
+  .product-grid{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+}
+
+@media(max-width:760px){
+  .jewellery-categories{
+    gap:7px
+  }
+  .jewellery-category{
+    padding:8px 12px
+  }
+
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .nav-search{display:none}
+
+  .hero{
+    grid-template-columns:1fr;
+    min-height:auto;
+    padding-top:65px
+  }
+  .hero-art{height:360px}
+  .ribbon{font-size:60px}
+
+  section{padding:65px 0}
+  .section-head{display:block}
+  h2{font-size:43px}
+
+  .brand-grid{grid-template-columns:repeat(2,1fr)}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr 1fr}
+  .policy{grid-template-columns:1fr}
+
+  .contact{
+    padding:35px;
+    display:block
+  }
+  .contact h2{font-size:48px}
+
+  .modal-box{padding:22px}
+  .modal-grid{grid-template-columns:1fr}
+  .modal-main-image{min-height:330px}
+  .modal-name{font-size:36px}
+}
+
+@media(max-width:480px){
+  .brand-grid,
+  .product-grid,
+  .steps{
+    grid-template-columns:1fr
+  }
+
+  .product-grid{gap:12px}
+  .hero h1{font-size:67px}
+  .hero-art{height:300px}
+
+  .request{display:block}
+  .request .btn{margin-top:15px}
+
+  .footer-inner{display:block}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+
+    <a class="logo" href="#home">
+      Rbi Muse<span>🎀</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#brands">Brands</a>
+      <a href="#products">Sản phẩm</a>
+      <a href="#how">Cách đặt hàng</a>
+      <a href="#policy">Bảng giá & Chính sách</a>
+      <a href="#contact">Liên hệ</a>
+    </div>
+
+    <div class="nav-search">
+      ⌕
+      <input
+        id="topSearch"
+        placeholder="Tìm sản phẩm..."
+        oninput="searchFromTop(this.value)"
+      >
+    </div>
+
+    <button
+      class="menu-btn"
+      onclick="document.querySelector('.nav-links').classList.toggle('show')"
+    >
+      ☰
+    </button>
+
+  </div>
+</nav>
+
+
+<main id="home">
+
+<!-- HERO -->
+<section class="hero container reveal">
+
+  <div>
+
+    <div class="kicker">
+      New Zealand • Pre-order • Curated
+    </div>
+
+    <h1>
+      Rbi Muse<span>🎀</span>
+    </h1>
+
+    <p>
+      Rbi Muse🎀 là shop order các sản phẩm ở New Zealand.
+      Khám phá những sản phẩm được tuyển chọn từ Pandora,
+      Swarovski, Rhode, Sephora và Coach — với giá order rõ ràng,
+      dễ xem và dễ đặt.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="btn" href="#products">
+        Khám phá sản phẩm
+      </a>
+
+      <a class="btn light" href="#how">
+        Cách đặt hàng
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="hero-art">
+
+    <div class="float-card one">
+      <span>Curated in</span><br>
+      <b>Auckland 🇳🇿</b>
+    </div>
+
+    <div class="ribbon">
+      Rbi Muse🎀
+    </div>
+
+    <div class="float-card two">
+      <span>Order via</span><br>
+      <b>@tyem_rbi</b>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BRANDS -->
+<section id="brands" class="container reveal">
+
+  <div class="section-head">
+
+    <div>
+      <div class="eyebrow">Explore</div>
+      <h2>Brands</h2>
+    </div>
+
+    <div class="section-note">
+      Chọn thương hiệu để xem nhanh các sản phẩm đang được
+      Rbi Muse🎀 nhận order.
+    </div>
+
+  </div>
+
+  <div class="brand-grid" id="brandGrid"></div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+<section id="products" class="container reveal">
+
+  <div class="section-head">
+
+    <div>
+      <div class="eyebrow">Shop catalogue</div>
+      <h2>Sản phẩm</h2>
+    </div>
+
+    <div class="section-note">
+      Tìm kiếm theo tên, thương hiệu hoặc danh mục.
+      Giá hiển thị là giá order dự kiến.
+    </div>
+
+  </div>
+
+
+  <div class="shop-tools">
+
+    <input
+      class="searchbox"
+      id="search"
+      placeholder="🔍 Tìm Pandora, Infinity, bag, serum..."
+      oninput="renderProducts()"
+    >
+
+    <select
+      class="filter"
+      id="brandFilter"
+      onchange="brandFilterChanged()"
+    >
+      <option value="all">Tất cả Brands</option>
+    </select>
+
+  </div>
+
+
+  <!-- CHỈ HIỆN KHI CHỌN PANDORA / SWAROVSKI -->
+  <div
+    class="jewellery-categories"
+    id="jewelleryCategories"
+    style="display:none"
+  ></div>
+
+
+  <div class="chips" id="categoryChips"></div>
+
+  <div class="product-grid" id="productGrid"></div>
+
+</section>
+
+
+<!-- HOW -->
+<section id="how" class="container reveal">
+
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">How it works</div>
+      <h2>Cách đặt hàng</h2>
+    </div>
+  </div>
+
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-no">01</div>
+      <h3>Chọn sản phẩm</h3>
+      <p>
+        Chọn sản phẩm hiện có trên website hoặc gửi sản phẩm
+        bạn muốn order.
+      </p>
+    </div>
+
+
+    <div class="step">
+      <div class="step-no">02</div>
+      <h3>Gửi qua IG</h3>
+      <p>
+        Inbox Instagram chính thức <b>@tyem_rbi</b>,
+        kèm tên, screenshot, màu hoặc size nếu có.
+      </p>
+    </div>
+
+
+    <div class="step">
+      <div class="step-no">03</div>
+      <h3>Nhận báo giá</h3>
+      <p>
+        Rbi Muse🎀 kiểm tra giá, tình trạng sản phẩm
+        và thông báo thời gian dự kiến có hàng.
+      </p>
+    </div>
+
+
+    <div class="step">
+      <div class="step-no">04</div>
+      <h3>Đặt cọc</h3>
+      <p>
+        Xác nhận đơn và thanh toán 50% hoặc 100%
+        tùy sản phẩm.
+      </p>
+    </div>
+
+
+    <div class="step">
+      <div class="step-no">05</div>
+      <h3>Nhận hàng</h3>
+      <p>
+        Shop cập nhật khi hàng về và hướng dẫn nhận/giao hàng.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="request">
+
+    <div>
+      <b>Không tìm thấy sản phẩm trên web?</b>
+
+      <p>
+        Gửi ảnh hoặc link sản phẩm qua Instagram,
+        shop sẽ check và báo giá.
+      </p>
+    </div>
+
+    <a
+      class="btn"
+      href="https://instagram.com/tyem_rbi"
+      target="_blank"
+    >
+      ♡ @tyem_rbi
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- POLICY -->
+<section id="policy" class="container reveal">
+
+  <div class="section-head">
+
+    <div>
+      <div class="eyebrow">Transparent ordering</div>
+      <h2>Bảng giá & Chính sách</h2>
+    </div>
+
+  </div>
+
+
+  <div class="policy">
+
+    <div class="policy-card">
+
+      <h3>Giá order đã bao gồm gì?</h3>
+
+      <div class="policy-list">
+
+        <div class="policy-item">
+          <div class="icon">₫</div>
+
+          <div>
+            <b>Giá sản phẩm</b>
+            <p>
+              Giá sản phẩm tại thời điểm shop xác nhận đơn.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="policy-item">
+          <div class="icon">♡</div>
+
+          <div>
+            <b>Phí order</b>
+            <p>
+              Đã được tính trong giá order hiển thị.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="policy-item">
+          <div class="icon">✦</div>
+
+          <div>
+            <b>Phí vận chuyển</b>
+            <p>
+              Theo chính sách vận chuyển của Rbi Muse🎀.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="policy-card">
+
+      <h3>Chính sách</h3>
+
+      <div class="policy-list">
+
+        <div class="policy-item">
+          <div class="icon">50%</div>
+
+          <div>
+            <b>Đặt cọc</b>
+            <p>
+              50% / 100% tùy sản phẩm và từng đơn hàng.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="policy-item">
+          <div class="icon">!</div>
+
+          <div>
+            <b>Huỷ đơn</b>
+            <p>
+              Khoản đặt cọc không được hoàn lại,
+              trừ trường hợp thuộc chính sách/điều kiện
+              bắt buộc áp dụng.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="policy-item">
+          <div class="icon">⌛</div>
+
+          <div>
+            <b>Thời gian</b>
+            <p>
+              Thời gian dự kiến có hàng sẽ được shop báo
+              khi inbox và xác nhận đơn.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="policy-item">
+          <div class="icon">▣</div>
+
+          <div>
+            <b>Bill</b>
+            <p>
+              Có thể cung cấp bill/receipt mua hàng nếu khách
+              yêu cầu và khi chứng từ được cung cấp từ nơi mua.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="container reveal">
+
+  <div class="contact">
+
+    <div>
+      <div class="eyebrow">Say hello</div>
+
+      <h2>
+        Liên hệ với<br>
+        Rbi Muse🎀
+      </h2>
+    </div>
+
+
+    <div>
+
+      <div class="ig">
+        Instagram chính thức
+      </div>
+
+      <p>@tyem_rbi</p>
+
+      <a
+        class="btn"
+        href="https://instagram.com/tyem_rbi"
+        target="_blank"
+      >
+        Mở Instagram ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 Rbi Muse🎀
+    </div>
+
+    <div>
+      Curated & ordered from New Zealand 🇳🇿
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="modal">
+
+  <div class="modal-box">
+
+    <button
+      class="close"
+      onclick="closeModal()"
+    >
+      ×
+    </button>
+
+    <div id="modalContent"></div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+/* ============================================================
+   PRODUCT DATA
+
+   Mỗi sản phẩm có thể thêm nhiều ảnh:
+
+   images:[
+     "images/product-1.jpg",
+     "images/product-2.jpg",
+     "images/product-3.jpg"
+   ]
+
+   Nếu chỉ có 1 ảnh thì cũng được.
+
+   ============================================================ */
+
+
+const products = [
+
+
+  /* =========================
+     PANDORA — VÒNG TAY
+     ========================= */
+
+  {
+    brand:"Pandora",
+    category:"Vòng tay",
+
+    name:"Sparkling Infinity Heart Clasp Snake Chain Bracelet",
+
+    price:"4.299.000đ",
+
+    images:[
+      "14k.jpeg",
+      "1.jpeg",
+      "q.jpeg",
+      "cotayvang.jpeg"
+    ],
+    variant:"14K gold plating",
+
+    description:[
+      "Gìn giữ sự gắn kết với những người thân yêu qua chiếc vòng tay vượt thời gian, nổi bật với phần khóa hình trái tim, các chi tiết lấp lánh và biểu tượng vô cực tôn vinh tình cảm gia đình."
+    ],
+    sizes:[
+      ["16","14 cm","Cổ tay nhỏ"],
+      ["17","15 cm","Cổ tay nhỏ – vừa"],
+      ["18","16 cm","Cổ tay vừa"],
+      ["19","17 cm","Cổ tay vừa – lớn"],
+      ["20","18 cm","Cổ tay lớn"],
+      ["21","19 cm","Cổ tay lớn"],
+      ["23","20 cm","Cổ tay lớn"]
+    ],
+  },
+
+
+  {
+    brand:"Pandora",
+    category:"Vòng tay",
+
+    name:"Sparkling Infinity Heart Clasp Snake Chain Bracelet",
+
+    price:"4.299.000đ",
+
+    images:[
+      "14k rose.jpeg",
+      "ro.jpeg",
+      "s.jpeg",
+      "v.jpeg"
+    ],
+
+    variant:"14k rose gold plating",
+
+    description:[
+      "Giữ trọn tình cảm gắn kết với người thân yêu qua chiếc vòng tay vượt thời gian, được chế tác tinh xảo với lớp mạ vàng hồng 14k, nổi bật cùng khóa cài hình trái tim, các chi tiết lấp lánh và biểu tượng vô cực tôn vinh tình cảm gia đình."
+    ],
+
+    sizes:[
+      ["16","13–14 cm","Cổ tay nhỏ"],
+      ["17","15–16 cm","Cổ tay nhỏ – vừa"],
+      ["18","15–16 cm","Cổ tay vừa"],
+      ["19","17–18 cm","Cổ tay vừa – lớn"],
+      ["20","17–18 cm","Cổ tay lớn"],
+      ["21","19–20 cm","Cổ tay lớn"],
+       ["23","19–21 cm","Cổ tay lớn"]
+    ],
+  },
+
+
+  {
+    brand:"Pandora",
+    category:"Vòng tay",
+
+    name:"Sparkling Infinity Heart Clasp Snake Chain Bracelet",
+
+    price:"2.799.000đ",
+
+    images:[
+      "e.jpeg",
+      "sterl.jpeg",
+      "ling.jpeg",
+    ],
+
+    variant:"Sterling silver",
+
+    description:[
+      "Một biến tấu đầy lãng mạn cho chiếc vòng tay dạng chuỗi mắt xích tròn (snake chain) vốn rất được ưa chuộng của chúng tôi. Phần khóa cài hình trái tim trên chiếc vòng bạc sterling này được kết hợp tinh tế cùng biểu tượng vô cực. Thiết kế chạm trổ tinh xảo cùng những viên đá cubic zirconia lấp lánh càng làm tôn thêm vẻ đẹp và chiều sâu cho ý nghĩa về một tình yêu vĩnh cửu."
+    ],
+
+    sizes:[
+      ["16","14 cm","Cổ tay nhỏ"],
+      ["17","15 cm","Cổ tay nhỏ – vừa"],
+      ["18","16 cm","Cổ tay vừa"],
+      ["19","17 cm","Cổ tay vừa – lớn"],
+      ["20","18 cm","Cổ tay lớn"],
+      ["21","19 cm","Cổ tay lớn"],
+       ["23","20 cm","Cổ tay lớn"]
+    ],
+  },
+
+
+  {
+    brand:"Pandora",
+    category:"Vòng tay",
+
+    name:"Sparkling Pink Infinity Heart Clasp Snake Chain Bracelet",
+
+    price:"2.499.000đ",
+
+    image:"",
+
+    images:[
+      "pink3.jpeg",
+      "pink1.jpeg",
+      "pink2.jpeg",
+      "pink4.jpeg",
+    ],
+
+     variant:"Sterling silver pink",
+
+    description:
+      "Một biểu tượng lấp lánh của tình yêu vĩnh cửu giữa gia đình. Vòng tay dây xích hình trái tim vô cực màu hồng lấp lánh của chúng tôi có thiết kế trái tim rỗng với họa tiết pavé màu hồng và dòng chữ khắc ý nghĩa 'Gia đình mãi mãi và trọn đời'",
+
+    sizes:[
+      ["16","13–14 cm","Cổ tay nhỏ"],
+      ["17","15–16 cm","Cổ tay nhỏ – vừa"],
+      ["18","16–17 cm","Cổ tay vừa"],
+      ["19","17–18 cm","Cổ tay vừa – lớn"],
+      ["20","18–19 cm","Cổ tay lớn"],
+      ["21","19–20 cm","Cổ tay lớn"],
+       ["23","19–21 cm","Cổ tay lớn"]
+    ],
+  },
+
+
+  /* =========================
+     PANDORA — CHARMS
+     ========================= */
+
+  {
+    brand:"Pandora",
+    category:"Vòng tay",
+
+    name:"Pandora Moments Snake Chain Bracelet",
+
+    price:"1.999.000đ",
+
+    images:[
+        "sliver1.jpeg",
+        "sliver2.jpeg",
+        "sliver3.jpeg",
+        "sliver4.jpeg",
+    ],
+
+    variant:"Sterling silver",
+
+    description:
+      "Hãy bắt đầu câu chuyện Pandora của riêng bạn với chiếc vòng tay bạc sterling kinh điển của chúng tôi. Là tấm nền hoàn hảo cho sự sáng tạo, chiếc vòng tay dạng chuỗi mắt rắn này có thể được biến tấu theo vô vàn phong cách cùng những hạt charm yêu thích, hoặc đeo riêng lẻ để tạo nên vẻ ngoài tinh tế và thanh lịch.",
+
+    sizes:[
+        ["16","14 cm","Cổ tay nhỏ"],
+      ["17","15 cm","Cổ tay nhỏ – vừa"],
+      ["18","16 cm","Cổ tay vừa"],
+      ["19","17 cm","Cổ tay vừa – lớn"],
+      ["20","18 cm","Cổ tay lớn"],
+      ["21","19 cm","Cổ tay lớn"],
+      ["23","20 cm","Cổ tay lớn"]
+    ],
+  },
+
+
+  {
+    brand:"Pandora",
+    category:"Vòng tay",
+
+    name:"Pandora Moments Snake Chain Bracelet",
+
+    price:"3.499.000đ",
+
+    images:[
+        "gold1.jpeg",
+        "gold2.jpeg",
+        "gold3.jpeg",
+        "gold4.jpeg"
+    ],
+
+    variant:"14k rose gold plating",
+
+    description:
+      "Hãy bắt đầu câu chuyện Pandora của riêng bạn với chiếc vòng tay kinh điển mạ vàng hồng 14k. Là nền tảng hoàn hảo để bạn thỏa sức sáng tạo, chiếc vòng tay dạng chuỗi mắt rắn này có thể được biến tấu theo vô vàn phong cách cùng những hạt charm yêu thích, hoặc đeo riêng lẻ để tạo nên vẻ ngoài tinh tế và thanh lịch.",
+
+    sizes:[
+        ["16","14 cm","Cổ tay nhỏ"],
+      ["17","15 cm","Cổ tay nhỏ – vừa"],
+      ["18","16 cm","Cổ tay vừa"],
+      ["19","17 cm","Cổ tay vừa – lớn"],
+      ["20","18 cm","Cổ tay lớn"],
+      ["21","19 cm","Cổ tay lớn"],
+      ["23","20 cm","Cổ tay lớn"]
+    ],
+  },
+
+  {
+    brand:"Pandora",
+    category:"Vòng tay",
+
+    name:"Pandora Moments Snake Chain Bracelet",
+
+    price:"3.499.000đ",
+
+    images:[
+        "plating1.jpeg",
+        "plating2.jpeg",
+        "plating3.jpeg",
+    ],
+
+
+    variant:"14k gold plating",
+
+    description:
+      "Hãy bắt đầu câu chuyện Pandora của riêng bạn với chiếc vòng tay mạ vàng 14k mang phong cách kinh điển. Là tấm nền hoàn hảo cho sự sáng tạo, chiếc vòng tay dạng dây xích mềm (snake chain) này có thể được biến tấu theo vô vàn cách cùng những chiếc charm yêu thích của bạn – hoặc đeo riêng để tạo nên vẻ ngoài tinh tế và thanh lịch.Hãy bắt đầu câu chuyện Pandora của riêng bạn với chiếc vòng tay mạ vàng 14k mang phong cách kinh điển. Là tấm nền hoàn hảo cho sự sáng tạo, chiếc vòng tay dạng dây xích mềm (snake chain) này có thể được biến tấu theo vô vàn cách cùng những chiếc charm yêu thích của bạn – hoặc đeo riêng để tạo nên vẻ ngoài tinh tế và thanh lịch.",
+
+    sizes:[
+        ["15","13–14 cm","Cổ tay nhỏ"],
+        ["16","14–15 cm","Cổ tay nhỏ"],
+      ["17","15–16 cm","Cổ tay nhỏ – vừa"],
+      ["18","16–17 cm","Cổ tay vừa"],
+      ["19","17–18 cm","Cổ tay vừa – lớn"],
+      ["20","18–19 cm","Cổ tay lớn"],
+      ["21","19–20 cm","Cổ tay lớn"],
+      ["23","20–21 cm","Cổ tay lớn"]
+    ],
+  },
+
+
+  /* =========================
+     PANDORA — NHẪN
+     ========================= */
+
+  {
+    brand:"Pandora",
+    category:"Nhẫn",
+
+    name:"Sparkling Bow Ring",
+
+    price:"2.999.000đ",
+
+    images:[
+        "ring1.jpeg",
+        "ring2.jpeg",
+        "ring3.jpeg",
+        "ring4.jpeg"
+    ],
+
+    variant:"14k rose gold plating",
+
+    description:
+      "Thiết kế chiếc nơ xinh xắn, được tạo nên từ hai viên đá hình trái tim, nằm nổi bật ở trung tâm chiếc nhẫn lấp lánh này. Với lớp mạ vàng hồng 14k, chiếc nhẫn là sự kết hợp hài hòa giữa nét ngọt ngào và vẻ thanh lịch, mang lại diện mạo đầy cuốn hút.",
+
+    sizes:[
+        ["4.5","48mm","Ngón tay nhỏ"],
+        ["5","50mm","Ngón tay nhỏ"],
+      ["6","52mm","Ngón tay nhỏ – vừa"],
+      ["7","54mm","Ngón tay vừa"],
+      ["7.5","56mm","Ngón tay vừa – lớn"],
+      ["8.5","58mm","Ngón tay lớn"],
+      ["9","60mm","Ngón tay lớn"],
+
+    ]
+  },
+  
+  {
+    brand:"Pandora",
+    category:"Nhẫn",
+
+    name:"Sparkling Pink Bow Ring",
+
+    price:"2.999.000đ",
+
+    images:[
+        "nhan2.jpeg",
+        "nhan1.jpeg",
+        "nhan3.jpeg"
+    ],
+
+    variant:"14k gold plating",
+
+    description:
+      "Hãy tỏa sáng rạng rỡ trong mùa lễ hội này cùng một biểu tượng mới của niềm hân hoan: chiếc nhẫn hình nơ màu hồng lấp lánh, được mạ vàng 14k. Với những viên đá màu hồng cắt hình trái tim cùng phần đai nhẫn đính đá kiểu pavé, chiếc nhẫn sẽ biến chuyển theo ánh sáng và khiến mỗi cử động của bạn đều trở nên lung linh.",
+
+    sizes:[
+        ["4.5","48mm","Ngón tay nhỏ"],
+        ["5","50mm","Ngón tay nhỏ"],
+      ["6","52mm","Ngón tay nhỏ – vừa"],
+      ["7","54mm","Ngón tay vừa"],
+      ["7.5","56mm","Ngón tay vừa – lớn"],
+      ["8.5","58mm","Ngón tay lớn"],
+      ["9","60mm","Ngón tay lớn"],
+  ], 
+  }, 
+
+  {
+    brand:"Pandora",
+    category:"Nhẫn",
+
+    name:"Sparkling Pink Bow Ring",
+
+    price:"2.499.000đ",
+
+    images:[
+        "ri1.jpeg",
+        "ri2.jpeg",
+        "ri3.jpeg",
+        "ri4.jpeg",
+    ],
+
+    variant:"Sterling silver",
+
+    description:
+      "Chiếc nhẫn Sparkling Pink Bow bằng bạc sterling nổi bật với hai viên đá cubic zirconia màu hồng phấn giác cắt hình trái tim cùng phần đai nhẫn được đính đá kiểu pavé. Thiết kế hình chiếc nơ độc đáo này mang đậm vẻ đẹp rạng rỡ và đầy cuốn hút, là lựa chọn hoàn hảo cho mọi dịp.",
+
+    sizes:[
+        ["4.5","48mm","Ngón tay nhỏ"],
+        ["5","50mm","Ngón tay nhỏ"],
+      ["6","52mm","Ngón tay nhỏ – vừa"],
+      ["7","54mm","Ngón tay vừa"],
+      ["7.5","56mm","Ngón tay vừa – lớn"],
+      ["8.5","58mm","Ngón tay lớn"],
+      ["9","60mm","Ngón tay lớn"],
+  ], 
+  }, 
+
+
+  {
+    brand:"Pandora",
+    category:"Nhẫn",
+
+    name:"Split Solitaire Ring",
+
+    price:"1.499.000đ",
+
+    images:[
+        "ing1.jpeg",
+        "ing2.jpeg",
+        "ing3.jpeg",
+    ],
+
+    variant:"Sterling silver",
+
+    description:
+      "Định nghĩa lại vẻ đẹp thanh lịch hiện đại. Chiếc nhẫn bạc cao cấp với thiết kế đai tách độc đáo này nổi bật nhờ viên đá cubic zirconia giác cắt rực rỡ được đính lơ lửng giữa hai dải đai nhẫn thanh mảnh. Một thiết kế tối giản mang vẻ đẹp lấp lánh đương đại, hoàn hảo cho phong cách vượt thời gian.",
+
+    sizes:[
+        ["4.5","48mm","Ngón tay nhỏ"],
+        ["5","50mm","Ngón tay nhỏ"],
+      ["6","52mm","Ngón tay nhỏ – vừa"],
+      ["7","54mm","Ngón tay vừa"],
+      ["7.5","56mm","Ngón tay vừa – lớn"],
+      ["8.5","58mm","Ngón tay lớn"],
+      ["9","60mm","Ngón tay lớn"],
+  ], 
+  }, 
+{
+    brand:"Pandora",
+    category:"Nhẫn",
+
+    name:"Split Solitaire Ring",
+
+    price:"1.599.000đ",
+
+    images:[
+        "kim1.jpeg",
+        "kim2.jpeg",
+        "kim3.jpeg",
+    ],
+
+    variant:"14k gold plating",
+
+    description:
+      "Định nghĩa lại vẻ đẹp thanh lịch hiện đại. Chiếc nhẫn solitaire đai tách mạ vàng 14k của chúng tôi nổi bật với viên đá cubic zirconia giác cắt brilliant lấp lánh, được đặt tinh tế giữa phần đai hở thanh thoát. Một thiết kế tối giản mang vẻ đẹp rạng rỡ đương đại, hoàn hảo cho phong cách vượt thời gian.",
+
+    sizes:[
+        ["4.5","48mm","Ngón tay nhỏ"],
+        ["5","50mm","Ngón tay nhỏ"],
+      ["6","52mm","Ngón tay nhỏ – vừa"],
+      ["7","54mm","Ngón tay vừa"],
+      ["7.5","56mm","Ngón tay vừa – lớn"],
+      ["8.5","58mm","Ngón tay lớn"],
+      ["9","60mm","Ngón tay lớn"],
+  ], 
+  }, 
+
+  /* =========================
+     PANDORA — HOA TAI
+     ========================= */
+
+  {
+    brand:"Pandora",
+    category:"Hoa tai",
+
+    name:"Pandora Earrings — Product 01",
+
+    price:"1.599.000đ",
+
+    image:"",
+
+    images:[],
+
+    material:"Theo sản phẩm",
+
+    variant:"Theo mẫu",
+
+    description:
+      "Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+
+    sizes:[]
+  },
+
+
+  /* =========================
+     SWAROVSKI
+     ========================= */
+
+  {
+    brand:"Swarovski",
+    category:"Vòng tay",
+    name:"Swarovski Bracelet — Product 01",
+    price:"3.299.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  },
+
+
+  {
+    brand:"Swarovski",
+    category:"Charms",
+    name:"Swarovski Charm — Product 01",
+    price:"1.799.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  },
+
+
+  {
+    brand:"Swarovski",
+    category:"Dây chuyền",
+    name:"Swarovski Necklace — Product 01",
+    price:"3.499.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  },
+
+
+  {
+    brand:"Swarovski",
+    category:"Nhẫn",
+    name:"Swarovski Ring — Product 01",
+    price:"2.699.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  },
+
+
+  {
+    brand:"Swarovski",
+    category:"Hoa tai",
+    name:"Swarovski Earrings — Product 01",
+    price:"2.299.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  },
+
+
+  /* =========================
+     RHODE
+     ========================= */
+
+  {
+    brand:"Rhode",
+    category:"Sản phẩm",
+    name:"Tinh chất dưỡng da mặt Glazing Milk Ceramide 124ml",
+    price:"1.399.000đ",
+    images:[
+        "o1.jpeg",
+        "o2.jpeg",
+        "o3.jpeg",
+        "o4.jpeg",
+        "o5.jpeg",
+        "o6.jpeg",
+    ],
+    variant:"Tinh chất giàu dưỡng chất giúp cấp ẩm và mang lại vẻ căng bóng rạng rỡ.",
+    description:"Glazing Milk là bước chuẩn bị thiết yếu trong quy trình chăm sóc da của bạn. Đây là loại tinh chất giàu dưỡng chất với kết cấu dạng sữa, giúp mang lại cảm giác da được cấp ẩm và căng bóng rạng rỡ, đồng thời hỗ trợ củng cố hàng rào bảo vệ da theo thời gian. Sản phẩm cũng đã đạt chứng nhận Seal of Acceptance™ từ Hiệp hội Eczema Quốc gia (National Eczema Association).",
+    careTable:[
+      ["Mẹo","Trộn cùng loại kem nền yêu thích của bạn để có lớp nền căng mọng, tự nhiên và chú trọng vào vẻ đẹp làn da."],
+      ["Cách dùng","Sử dụng vào buổi sáng và buổi tối sau bước làm sạch da; lấy một lượng sản phẩm vừa đủ ra lòng bàn tay rồi nhẹ nhàng áp lên vùng mặt, cổ và vùng da ngực. Lắc đều trước khi sử dụng. Để đạt hiệu quả tối ưu, hãy sử dụng kết hợp cùng Peptide Glazing Fluid và Barrier Restore Cream hoặc Barrier Butter (các sản phẩm này được bán riêng)."],
+      ["Vấn đề da","Xỉn màu • Mất nước • Khô • Mẩn đỏ"],
+      ["Công dụng","Thuần chay • Cấp ẩm • Nuôi dưỡng • Làm dịu"],
+      ["Loại da","Dùng được cho mọi loạ da."]
+    ]
+  },
+
+
+  {
+    brand:"Rhode",
+    category:"Sản phẩm",
+    name:"Peptide Glazing Fluid Dewy Gel Serum ",
+    images:[
+        "d1.jpeg",
+        "d2.jpeg",
+        "d3.jpeg",
+        "d4.jpeg",
+        "d5.jpeg",
+    ],
+    variant:"Serum dưỡng da mặt giúp cấp ẩm và làm sáng da.",
+    description:"Peptide Glazing Fluid là loại serum dạng gel mỏng nhẹ, thẩm thấu nhanh, giúp cấp ẩm và làm sáng da, đồng thời mang lại hiệu ứng da căng mọng rõ rệt theo thời gian. Sản phẩm tạo lớp nền căng bóng và rạng rỡ tức thì.",
+    sizeOptions:[
+      {label:"15ml", price:"999.000đ"},
+      {label:"50ml", price:"1.399.000đ"},
+    ],
+    careTable:[
+      ["Cách dùng","Sử dụng vào buổi sáng và buổi tối sau bước làm sạch; thoa đều một đến hai lần nhấn sản phẩm lên vùng mặt, cổ và vùng da ngực. Để đạt hiệu quả tối ưu, hãy sử dụng kết hợp với Barrier Restore Cream hoặc Barrier Butter (các sản phẩm này được bán riêng)."],
+      ["Vấn đề da","Xỉn màu • Mất nước • Khô"],
+      ["Công dụng","Thuần chay • Làm sáng • Làm đầy • Cấp ẩm"],
+      ["Loại da","Da hỗn hợp • Da dầu • Da khô"]
+    ]
+  },
+   { 
+    brand:"Rhode",
+    category:"Sản phẩm",
+    name:"Barrier Restore Cream Comforting Daily Moisturiser 50ml ",
+    price:"1.399.000đ",
+    images:[
+        "h1.jpeg",
+        "h2.jpeg",
+        "h3.jpeg",
+        "h4.jpeg",
+        "h5.jpeg",
+        "h6.jpeg",
+    ],
+    variant:"Kem dưỡng ẩm hàng ngày giúp làm dịu và cấp ẩm, hỗ trợ hàng rào bảo vệ da.",
+    description:"Barrier Restore Cream là loại kem dưỡng ẩm có kết cấu giàu dưỡng chất nhưng vẫn nhẹ dịu, lý tưởng cho quy trình chăm sóc da hàng ngày của bạn. Sản phẩm bao bọc làn da bằng lớp dưỡng ẩm vỗ về, đồng thời cải thiện tình trạng da xỉn màu và nuôi dưỡng làn da khỏe mạnh theo thời gian. Đây là bước chăm sóc thiết yếu để nuôi dưỡng và củng cố hàng rào bảo vệ da một cách tối ưu.",
+    careTable:[
+      ["Cách dùng","Vào buổi sáng và tối sau khi làm sạch da, thoa một lượng kem Barrier Restore Cream (tương đương độ dài nửa đốt ngón tay) lên vùng mặt, cổ và vùng da dưới cổ. Để đạt hiệu quả tối ưu, hãy thoa sản phẩm này sau bước Glazing Milk và Peptide Glazing Fluid (được bán riêng) như bước cuối cùng trong quy trình chăm sóc da của bạn.."],
+      ["Vấn đề da","Xỉn màu • Mất nước • Khô"],
+      ["Công dụng","Thuần chay • Cấp ẩm • Nuôi dưỡng • Làm dịu • Không hương liệu"],
+      ["Loại da","Da hỗn hợp • Da dầu • Da khô"]
+    ],
+  },
+  {
+    brand:"Rhode",
+    category:"Sản phẩm",
+    name:"Barrier Butter Intensive Moisture Balm",
+    images:[
+        "rh1.jpeg",
+        "rh2.jpeg",
+        "rh3.jpeg",
+        "rh4.jpeg",
+        "rh5.jpeg",
+        "rh.jpeg",
+    ],
+    variant:"Sáp dưỡng da mặt giúp cấp ẩm và dưỡng ẩm sâu.",
+    description:"Barrier Butter là sản phẩm bổ sung đầy mạnh mẽ cho quy trình chăm sóc da của bạn. Đây là loại sáp dưỡng có kết cấu mịn mượt tựa bơ, giúp khóa ẩm suốt 24 giờ, đồng thời khôi phục độ mềm mại và độ đàn hồi tự nhiên của làn da. Sản phẩm giúp làm mờ các nếp nhăn li ti và hỗ trợ mang lại làn da săn chắc, căng mọng hơn theo thời gian.",
+    sizeOptions:[
+      {label:"40ml", price:"1.099.000đ"},
+      {label:"100ml", price:"1.499.000đ"},
+    ],
+    careTable:[
+      ["Cách dùng","Barrier Butter là sản phẩm đa năng, vì vậy bạn có thể thoa lên bất kỳ vùng da nào cần thiết. Hãy sử dụng sản phẩm như bước khóa ẩm cuối cùng trong quy trình chăm sóc da ban đêm, hoặc thoa lên toàn thân tại những vùng da khô như bàn tay, khuỷu tay và đầu gối."],
+      ["Vấn đề da","Xỉn màu • Mất nước • Lão hóa • Da khô"],
+      ["Công dụng","Thuần chay • Săn chắc • Căng mọng • Cấp ẩm • Nuôi dưỡng • Làm mịn • Không hương liệu"],
+      ["Loại da","Da hỗn hợp • Da khô"]
+    ]
+  },
+
+
+  /* =========================
+     SEPHORA
+     ========================= */
+
+  {
+    brand:"Sephora",
+    category:"Sản phẩm",
+    name:"Sephora — Product 01",
+    price:"1.499.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  },
+
+
+  {
+    brand:"Sephora",
+    category:"Sản phẩm",
+    name:"Sephora — Product 02",
+    price:"1.899.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  },
+
+
+  /* =========================
+     COACH
+     ========================= */
+
+  {
+    brand:"Coach",
+    category:"Sản phẩm",
+    name:"Coach — Product 01",
+    price:"3.999.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  },
+
+
+  {
+    brand:"Coach",
+    category:"Sản phẩm",
+    name:"Coach — Product 02",
+    price:"4.499.000đ",
+    image:"",
+    images:[],
+    material:"Theo sản phẩm",
+    variant:"Theo mẫu",
+    description:"Mô tả sản phẩm sẽ được cập nhật theo mẫu thực tế.",
+    sizes:[]
+  }
+
+];
+
+
+const brands = [
+  "Pandora",
+  "Swarovski",
+  "Rhode",
+  "Sephora",
+  "Coach"
+];
+
+
+const jewelleryCategories = [
+  "Tất cả",
+  "Vòng tay",
+  "Charms",
+  "Dây chuyền",
+  "Nhẫn",
+  "Hoa tai"
+];
+
+
+let selectedBrand = "all";
+let selectedCategory = "all";
+
+let modalImages = [];
+let modalImageIndex = 0;
+let currentModalProduct = null;
+
+
+/* =========================
+   INIT
+   ========================= */
+
+function init(){
+
+  const brandGrid =
+    document.getElementById("brandGrid");
+
+
+  brandGrid.innerHTML =
+    brands.map(b => `
+
+      <button
+        class="brand-card"
+        onclick="chooseBrand('${b}')"
+        style="text-align:left"
+      >
+
+        <div class="brand-name">
+          ${b}
+        </div>
+
+        <div class="brand-arrow">
+          Xem sản phẩm →
+        </div>
+
+      </button>
+
+    `).join("");
+
+
+  const bf =
+    document.getElementById("brandFilter");
+
+
+  brands.forEach(b => {
+
+    bf.insertAdjacentHTML(
+      "beforeend",
+      `<option value="${b}">${b}</option>`
+    );
+
+  });
+
+
+  renderProducts();
+}
+
+
+/* =========================
+   CHOOSE BRAND
+   ========================= */
+
+function chooseBrand(brand){
+
+  selectedBrand = brand;
+
+  selectedCategory = "all";
+
+  document.getElementById(
+    "brandFilter"
+  ).value = brand;
+
+  document.getElementById(
+    "search"
+  ).value = "";
+
+  document.getElementById(
+    "products"
+  ).scrollIntoView({
+    behavior:"smooth"
+  });
+
+  renderProducts();
+}
+
+
+/* =========================
+   BRAND FILTER
+   ========================= */
+
+function brandFilterChanged(){
+
+  selectedBrand =
+    document.getElementById(
+      "brandFilter"
+    ).value;
+
+  selectedCategory = "all";
+
+  renderProducts();
+}
+
+
+/* =========================
+   TOP SEARCH
+   ========================= */
+
+function searchFromTop(value){
+
+  document.getElementById(
+    "search"
+  ).value = value;
+
+  selectedBrand = "all";
+
+  selectedCategory = "all";
+
+  document.getElementById(
+    "brandFilter"
+  ).value = "all";
+
+  document.getElementById(
+    "products"
+  ).scrollIntoView({
+    behavior:"smooth"
+  });
+
+  renderProducts();
+}
+
+
+/* =========================
+   JEWELLERY CATEGORY
+   ========================= */
+
+function chooseJewelleryCategory(category){
+
+  selectedCategory = category;
+
+  renderProducts();
+}
+
+
+/* =========================
+   RENDER PRODUCTS
+   ========================= */
+
+function renderProducts(){
+
+  const query =
+    document.getElementById(
+      "search"
+    ).value
+    .toLowerCase()
+    .trim();
+
+
+  selectedBrand =
+    document.getElementById(
+      "brandFilter"
+    ).value;
+
+
+  const jewelleryBar =
+    document.getElementById(
+      "jewelleryCategories"
+    );
+
+
+  const isJewelleryBrand =
+    selectedBrand === "Pandora" ||
+    selectedBrand === "Swarovski";
+
+
+  /*
+   Hiện thanh danh mục riêng
+   cho Pandora + Swarovski
+  */
+
+  jewelleryBar.style.display =
+    isJewelleryBrand
+      ? "flex"
+      : "none";
+
+
+  if(isJewelleryBrand){
+
+    jewelleryBar.innerHTML =
+      jewelleryCategories.map(c => `
+
+        <button
+          class="jewellery-category
+          ${
+            selectedCategory === c ||
+            (
+              c === "Tất cả" &&
+              selectedCategory === "all"
+            )
+            ? "active"
+            : ""
+          }"
+
+          onclick="
+            chooseJewelleryCategory(
+              '${c === "Tất cả" ? "all" : c}'
+            )
+          "
+        >
+
+          ${c}
+
+        </button>
+
+      `).join("");
+
+
+    document.getElementById(
+      "categoryChips"
+    ).style.display = "none";
+
+  }
+
+  else{
+
+    document.getElementById(
+      "categoryChips"
+    ).style.display = "flex";
+
+  }
+
+
+  const relevant =
+    products.filter(
+      p =>
+        selectedBrand === "all" ||
+        p.brand === selectedBrand
+    );
+
+
+  const categories =
+    [
+      ...new Set(
+        relevant.map(p => p.category)
+      )
+    ];
+
+
+  const chips =
+    document.getElementById(
+      "categoryChips"
+    );
+
+
+  chips.innerHTML =
+
+    `<button
+      class="chip ${
+        selectedCategory === "all"
+        ? "active"
+        : ""
+      }"
+      onclick="
+        selectedCategory='all';
+        renderProducts()
+      "
+    >
+      Tất cả
+    </button>`
+
+    +
+
+    categories.map(c => `
+
+      <button
+        class="chip ${
+          selectedCategory === c
+          ? "active"
+          : ""
+        }"
+
+        onclick="
+          selectedCategory='${c}';
+          renderProducts()
+        "
+      >
+
+        ${c}
+
+      </button>
+
+    `).join("");
+
+
+  let filtered =
+    relevant.filter(
+      p =>
+        selectedCategory === "all" ||
+        p.category === selectedCategory
+    );
+
+
+  if(query){
+
+    filtered =
+      filtered.filter(p =>
+
+        `${p.name}
+        ${p.brand}
+        ${p.category}
+        ${p.material || ""}
+        ${p.variant || ""}
+        ${p.description || ""}`
+
+        .toLowerCase()
+        .includes(query)
+
+      );
+
+  }
+
+
+  const grid =
+    document.getElementById(
+      "productGrid"
+    );
+
+
+  if(!filtered.length){
+
+    grid.innerHTML = `
+
+      <div
+        style="
+          grid-column:1/-1;
+          text-align:center;
+          padding:55px;
+          color:#806d68
+        "
+      >
+
+        <div
+          style="
+            font-family:'Cormorant Garamond';
+            font-size:42px
+          "
+        >
+          Không tìm thấy sản phẩm
+        </div>
+
+        <p>
+          Gửi screenshot hoặc link sản phẩm
+          qua <b>@tyem_rbi</b>,
+          shop sẽ check cho bạn 🎀
+        </p>
+
+      </div>
+
+    `;
+
+    return;
+  }
+
+
+  grid.innerHTML =
+    filtered.map((p,i) => {
+
+      const firstImage =
+        (
+          p.images &&
+          p.images.length
+        )
+        ? p.images[0]
+        : p.image;
+
+
+      return `
+
+        <article
+          class="product"
+          style="animation-delay:${i*45}ms"
+        >
+
+          <button
+            class="product-hitarea"
+            type="button"
+            aria-label="Xem ${p.name}"
+            onclick="openProductById(${products.indexOf(p)})"
+          ></button>
+
+          <div class="product-img">
+
+            ${
+              firstImage
+
+              ?
+
+              `
+              <img
+                src="${firstImage}"
+                alt="${p.name}"
+                onerror="
+                  this.style.display='none';
+                  this.nextElementSibling.style.display='block'
+                "
+              >
+              `
+
+              :
+
+              ""
+            }
+
+
+            <div
+              class="placeholder"
+              ${
+                firstImage
+                ? 'style="display:none"'
+                : ""
+              }
+            >
+              Rbi Muse🎀
+            </div>
+
+          </div>
+
+
+          <div class="product-body">
+
+            <div class="product-brand">
+              ${p.brand}
+            </div>
+
+
+            <div class="product-name">
+              ${p.name}
+            </div>
+
+
+            <div class="product-price">
+              ${p.price}
+            </div>
+
+
+            <div class="product-cat">
+
+              ${p.category}
+
+              ${
+                p.variant
+                ? " · " + p.variant
+                : ""
+              }
+
+            </div>
+
+
+            <button
+              class="product-btn"
+              onclick="openProductById(${products.indexOf(p)})"
+            >
+              Xem sản phẩm
+            </button>
+
+          </div>
+
+        </article>
+
+      `;
+
+    }).join("");
+}
+
+
+/* =========================
+   GET PRODUCT IMAGES
+   ========================= */
+
+function getProductImages(p){
+
+  const imgs =
+    (
+      p.images &&
+      p.images.length
+    )
+
+    ?
+
+    p.images
+
+    :
+
+    (
+      p.image
+      ? [p.image]
+      : []
+    );
+
+
+  return imgs.length
+    ? imgs
+    : [""];
+}
+
+
+/* =========================
+   OPEN PRODUCT
+   ========================= */
+
+function openProductById(index){
+
+  const p = products[index];
+
+  if(!p) return;
+
+  currentModalProduct = p;
+
+  modalImages =
+    getProductImages(p);
+
+  modalImageIndex = 0;
+
+  renderModal(p);
+
+  document
+    .getElementById("modal")
+    .classList.add("open");
+
+  document.body.style.overflow =
+    "hidden";
+}
+
+
+/* =========================
+   RENDER MODAL
+   ========================= */
+
+function renderModal(p){
+
+  const current =
+    modalImages[
+      modalImageIndex
+    ];
+
+
+  const hasMultiple =
+    modalImages.length > 1;
+
+
+  const thumbs =
+    modalImages.map(
+      (img,i) => `
+
+        <button
+          class="
+            gallery-thumb
+            ${i === modalImageIndex
+              ? "active"
+              : ""}
+          "
+          onclick="
+            setModalImage(${i})
+          "
+        >
+
+          ${
+            img
+
+            ?
+
+            `
+            <img
+              src="${img}"
+              alt="${p.name} — ảnh ${i+1}"
+            >
+            `
+
+            :
+
+            `
+            <span
+              style="
+                font-family:
+                'Cormorant Garamond';
+                font-size:14px
+              "
+            >
+              Rbi
+            </span>
+            `
+          }
+
+        </button>
+
+      `
+    ).join("");
+
+
+  let sizeRows;
+  let sizeTitle = "Bảng size";
+  let sizeHeaders = `
+
+      <tr>
+        <th>Size</th>
+        <th>Kích thước</th>
+        <th>Gợi ý</th>
+      </tr>
+
+    `;
+
+  const sizeOptions =
+    p.sizeOptions && p.sizeOptions.length
+      ? p.sizeOptions
+      : [];
+
+  const selectedSizeOption =
+    sizeOptions[0] || null;
+
+  const selectedSizePrice =
+    selectedSizeOption
+      ? selectedSizeOption.price
+      : p.price;
+
+  const sizePickerHtml =
+    sizeOptions.length
+      ? `
+        <div class="size-picker">
+          <label for="productSizeSelect">Chọn size</label>
+          <select
+            id="productSizeSelect"
+            onchange="applySelectedSizeOption(this.value)"
+          >
+            ${sizeOptions.map(
+              option => `
+                <option value="${option.label}">
+                  ${option.label}
+                </option>
+              `
+            ).join("")}
+          </select>
+        </div>
+      `
+      : "";
+
+
+  if(
+    ["Rhode", "Sephora"].includes(p.brand)
+    &&
+    p.careTable
+    &&
+    p.careTable.length
+  ){
+
+    sizeTitle = "Thông tin sản phẩm";
+    sizeHeaders = `
+
+      <tr>
+        <th>Mục</th>
+        <th>Chi tiết</th>
+      </tr>
+
+    `;
+
+    sizeRows =
+      p.careTable.map(
+        row => `
+
+          <tr>
+            <td>${row[0]}</td>
+            <td>${row[1]}</td>
+          </tr>
+
+        `
+      ).join("");
+
+  }
+
+  else if(
+    p.sizes &&
+    p.sizes.length
+  ){
+
+    sizeRows =
+      p.sizes.map(
+        row => `
+
+          <tr>
+            <td>${row[0]}</td>
+            <td>${row[1]}</td>
+            <td>${row[2]}</td>
+          </tr>
+
+        `
+      ).join("");
+
+  }
+
+  else{
+
+    sizeRows = `
+
+      <tr>
+
+        <td colspan="3">
+
+          Size/variant thay đổi
+          theo từng sản phẩm.
+          Inbox @tyem_rbi để shop
+          check size chính xác.
+
+        </td>
+
+      </tr>
+
+    `;
+
+  }
+
+
+  document.getElementById(
+    "modalContent"
+  ).innerHTML = `
+
+
+    <div class="modal-grid">
+
+
+      <!-- GALLERY -->
+
+      <div class="modal-gallery">
+
+        <div class="modal-main-image">
+
+          ${
+            current
+
+            ?
+
+            `
+            <img
+              id="modalMainImage"
+              src="${current}"
+              alt="${p.name}"
+              onerror="
+                this.style.display='none';
+                document
+                .getElementById('modalPlaceholder')
+                .style.display='grid'
+              "
+            >
+            `
+
+            :
+
+            ""
+          }
+
+
+          <div
+            id="modalPlaceholder"
+            class="placeholder"
+            ${
+              current
+              ? 'style="display:none"'
+              : ""
+            }
+          >
+            Rbi Muse🎀
+          </div>
+
+
+          ${
+            hasMultiple
+
+            ?
+
+            `
+
+              <button
+                class="gallery-arrow prev"
+                onclick="previousModalImage()"
+              >
+                ‹
+              </button>
+
+
+              <button
+                class="gallery-arrow next"
+                onclick="nextModalImage()"
+              >
+                ›
+              </button>
+
+            `
+
+            :
+
+            ""
+          }
+
+        </div>
+
+
+        ${
+          hasMultiple
+
+          ?
+
+          `
+          <div class="gallery-thumbs">
+            ${thumbs}
+          </div>
+          `
+
+          :
+
+          ""
+        }
+
+      </div>
+
+
+      <!-- PRODUCT INFO -->
+
+      <div>
+
+
+        <div class="modal-brand">
+          ${p.brand} · ${p.category}
+        </div>
+
+
+        <div class="modal-name">
+          ${p.name}
+        </div>
+
+
+        <div class="modal-price" id="modalPriceValue">
+          ${selectedSizePrice}
+        </div>
+
+        ${sizePickerHtml}
+
+        <div class="modal-meta">
+
+
+          ${
+            p.material
+
+            ?
+
+            `
+            <div class="modal-meta-row">
+
+              <span>
+                Chất liệu
+              </span>
+
+              <b>
+                ${p.material}
+              </b>
+
+            </div>
+            `
+
+            :
+
+            ""
+          }
+
+
+          ${
+            p.variant
+
+            ?
+
+            `
+            <div class="modal-meta-row">
+
+              <span>
+                Phiên bản
+              </span>
+
+              <b>
+                ${p.variant}
+              </b>
+
+            </div>
+            `
+
+            :
+
+            ""
+          }
+
+
+          <div class="modal-meta-row">
+
+            <span>
+              Thương hiệu
+            </span>
+
+            <b>
+              ${p.brand}
+            </b>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- DESCRIPTION -->
+
+        <p class="modal-description">
+
+          ${
+            p.description
+            ||
+            "Sản phẩm nhận order từ New Zealand. Shop sẽ xác nhận thông tin và giá trước khi chốt đơn."
+          }
+
+        </p>
+
+
+        <!-- SIZE -->
+
+        <div class="size-box">
+
+          <div class="size-title">
+            ${sizeTitle}
+          </div>
+
+
+          <table class="size-table">
+
+            <thead>
+
+              ${sizeHeaders}
+
+            </thead>
+
+
+            <tbody>
+
+              ${sizeRows}
+
+            </tbody>
+
+          </table>
+
+
+          <p class="size-note">
+
+            * Bảng size hiển thị theo dữ liệu
+            của từng sản phẩm. Nếu chưa có size
+            trên website, gửi ảnh/link qua
+            Instagram để Rbi Muse🎀 check giúp.
+
+          </p>
+
+        </div>
+
+
+        <div style="margin-top:20px">
+
+          <a
+            class="btn"
+            href="https://instagram.com/tyem_rbi"
+            target="_blank"
+          >
+            ♡ Order qua @tyem_rbi
+          </a>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  `;
+}
+
+
+/* =========================
+   CHANGE MODAL IMAGE
+   ========================= */
+
+function setModalImage(index){
+
+  modalImageIndex = index;
+
+  refreshModalGallery();
+}
+
+
+/* =========================
+   PREVIOUS IMAGE
+   ========================= */
+
+function previousModalImage(){
+
+  if(!modalImages.length)
+    return;
+
+
+  modalImageIndex =
+    (
+      modalImageIndex -
+      1 +
+      modalImages.length
+    )
+    %
+    modalImages.length;
+
+
+  refreshModalGallery();
+}
+
+
+/* =========================
+   NEXT IMAGE
+   ========================= */
+
+function nextModalImage(){
+
+  if(!modalImages.length)
+    return;
+
+
+  modalImageIndex =
+    (
+      modalImageIndex +
+      1
+    )
+    %
+    modalImages.length;
+
+
+  refreshModalGallery();
+}
+
+
+/* =========================
+   REFRESH GALLERY
+   ========================= */
+
+function refreshModalGallery(){
+
+  const main =
+    document.getElementById(
+      "modalMainImage"
+    );
+
+
+  const placeholder =
+    document.getElementById(
+      "modalPlaceholder"
+    );
+
+
+  const current =
+    modalImages[
+      modalImageIndex
+    ];
+
+
+  if(main){
+
+    if(current){
+
+      main.src = current;
+
+      main.style.display =
+        "block";
+
+      if(placeholder)
+        placeholder.style.display =
+          "none";
+
+    }
+
+    else{
+
+      main.style.display =
+        "none";
+
+      if(placeholder)
+        placeholder.style.display =
+          "grid";
+
+    }
+
+  }
+
+
+  document
+    .querySelectorAll(
+      ".gallery-thumb"
+    )
+    .forEach(
+      (el,i) => {
+
+        el.classList.toggle(
+          "active",
+          i === modalImageIndex
+        );
+
+      }
+    );
+}
+
+
+/* =========================
+   CLOSE MODAL
+   ========================= */
+
+function closeModal(){
+
+  document
+    .getElementById("modal")
+    .classList.remove("open");
+
+  document.body.style.overflow =
+    "";
+
+}
+
+
+function applySelectedSizeOption(selectedLabel){
+
+  const p = currentModalProduct;
+
+  if(!p || !p.sizeOptions || !p.sizeOptions.length) return;
+
+  const selected =
+    p.sizeOptions.find(
+      option => option.label === selectedLabel
+    );
+
+  if(!selected) return;
+
+  const priceEl =
+    document.getElementById("modalPriceValue");
+
+  if(priceEl){
+    priceEl.textContent = selected.price;
+  }
+
+}
+
+
+document
+  .getElementById("modal")
+  .addEventListener(
+    "click",
+    e => {
+
+      if(
+        e.target.id === "modal"
+      ){
+
+        closeModal();
+
+      }
+
+    }
+  );
+
+
+/* =========================
+   KEYBOARD
+   ========================= */
+
+document.addEventListener(
+  "keydown",
+  e => {
+
+    if(
+      !document
+        .getElementById("modal")
+        .classList
+        .contains("open")
+    )
+      return;
+
+
+    if(e.key === "Escape")
+      closeModal();
+
+
+    if(e.key === "ArrowLeft")
+      previousModalImage();
+
+
+    if(e.key === "ArrowRight")
+      nextModalImage();
+
+  }
+);
+
+
+/* =========================
+   SCROLL ANIMATION
+   ========================= */
+
+const observer =
+  new IntersectionObserver(
+    entries => {
+
+      entries.forEach(
+        e => {
+
+          if(e.isIntersecting)
+            e.target.classList.add(
+              "visible"
+            );
+
+        }
+      );
+
+    },
+    {
+      threshold:.12
+    }
+  );
+
+
+document
+  .querySelectorAll(".reveal")
+  .forEach(
+    el =>
+      observer.observe(el)
+  );
+
+
+/* START */
+
+init();
+
+</script>
+
+</body>
+</html>
